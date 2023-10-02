@@ -20,8 +20,9 @@ public class test2 extends Base{
 		System.out.println("drugi test");
 		log.info("Test Two pass");
 		driver= initializeBrowser();
-	        System.out.println("This test fail");
 		driver.get("https://maven.apache.org/plugins/maven-resources-plugin/examples/filter.html");
+		
+		//TEST FAIL
 		Assert.assertFalse(true);
 		
 		
